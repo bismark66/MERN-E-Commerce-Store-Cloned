@@ -4,7 +4,6 @@ import Product from "../models/productModel.js";
 const addProduct = asyncHandler(async (req, res) => {
   try {
     const { name, description, price, category, quantity, brand } = req.fields;
-
     // Validation
     switch (true) {
       case !name:
