@@ -195,6 +195,7 @@ const markOrderAsPaid = async ({
 const payOrder = async (req, res) => {
   try {
     const { callback_url, order } = req.body;
+    console.log("---", callback_url, order);
 
     // Validation
     switch (true) {
